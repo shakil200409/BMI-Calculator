@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script1.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Heading -->
+        <h1>BMI Calculator</h1>
+
+        <!-- Input Form -->
+        <form class="calculator">
+            <div>
+                <label for="weight">Weight (KG)</label>
+                <input type="number" id="weight" min="0" step="0.01">
+            </div>
+
+            <div>
+                <label for="height">Height (CM)</label>
+                <input type="number" id="height" min="0" step="0.01">
+            </div>
+
+            <!-- Buttons -->
+            <div>
+                <button type="reset">reset</button>
+                <button type="submit">submit</button>
+            </div>
+        </form>
+
+        <!-- Result Section -->
+        <section class="output">
+            <h3>Your BMI is</h3>
+            <p id="bmi">0</p>
+            <p id="desc">N/A</p>
+        </section>
+
+        <section class="bmi-scale">
+            <div style="--color: var(--underweight)">
+                <h4>Underweight</h4>
+                <p>&lt; 18.5</p>
+            </div>
+
+            <div style="--color: var(--normal)">
+                <h4>Normal</h4>
+                <p>18.5 - 25</p>
+            </div>
+            <div style="--color: var(--overweight)">
+                <h4>Overweight</h4>
+                <p> >= 26</p>
+            </div>
+        </section>
+
+        <!-- Footer section -->
+        <footer>@Shakil Ahmed (577863)</footer>
+    </div>
+</body>
+</html>
